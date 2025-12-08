@@ -32,7 +32,7 @@ Called on every user message of type [UserMessage](./Lua_Classes/UserMessage.md)
 
 Called when console command is sent to server, ex. chat command "say".
 
-### FrameStageNotify( stage:integer )
+### FrameStageNotify( [stage:integer](Lua_Constants.md#e_clientframestage) )
 
 Called multiple times per frame for each stage of the frame, such as rendering start, end, network update start, end, etc. You can do some actions here better than anywhere else. Make sure to check the E_ClientFrameStage constant.
 This used to be PostPropUpdate if you only updates on NETWORK_UPDATE_START. PostPropUpdate is now deprecated, please do not use it.

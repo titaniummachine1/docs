@@ -43,7 +43,6 @@ Triggers a charge of warp ticks.
 ## Examples
 
 ``` lua title="Play a sound when weapon can double tap"
-
 local function onCreateMove( cmd )
     local me = entities.GetLocalPlayer()
     if e ~= nil then
@@ -62,5 +61,15 @@ local function onCreateMove( cmd )
 end
 
 callbacks.Register("CreateMove", onCreateMove)
+```
 
+```lua title="Always recharge warp"
+---@param cmd UserCmd
+local function OnCreateMove( cmd )
+	if warp.GetChargedTicks() == 0 then
+		warp.TriggerCharge()
+	end
+end
+
+callbacks.Register("CreateMove", OnCreateMove)
 ```

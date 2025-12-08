@@ -44,10 +44,10 @@ Returns true if the player is chat suspended.
 
 ```lua title="Print the steam IDs and teams of all players in a found lobby"
 
-callbacks.Register( "OnLobbyUpdated", "mylobby", function( lobby )
+callbacks.Register("OnLobbyUpdated", "mylobby", function( lobby )
     for _, player in pairs( lobby:GetMembers() ) do
         print( player:GetSteamID(), player:GetTeam() )
     end
-end )
+end)
 
 ```

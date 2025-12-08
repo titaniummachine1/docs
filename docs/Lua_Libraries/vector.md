@@ -66,7 +66,7 @@ Normalize vector angles
 
 ```lua title="Arithmetic example"
 local vec = vector.Add( Vector3( 1, 2, 3 ), {4, 5, 6} )
-local vec = vector.Subtract( {10, 20, 30}}, {4, 5, 6} )
+local vec = vector.Subtract( {10, 20, 30}, {4, 5, 6} )
 ```
 
 ```lua title="Angle normalise"
@@ -74,4 +74,14 @@ print(vector.AngleNormalize({30, 182, 2}))
 --- prints [30.0, -178.0, 0.0]
 ```
 
+```lua title="Arithmetic example 2"
+local a = Vector3(12, 34, 56)
+local b = Vector3(78, 90, 12)
+local c = a + b
+local d = a - b
+print(c, d)
+--- output:
+--- [90.0, 124.0, 68.0]
+--- [-66.0, -56.0, 44.0]
+```
 

@@ -30,15 +30,15 @@ Reads one byte from the buffer. Returns the byte read as first return value, and
 
 Reads a single bit from the buffer. Returns the bit read as first return value, and current bit position as second return value.
 
-### ReadFloat( [bitLength:integer] )
+### ReadFloat( bitLength: integer = 32 )
 
 Reads 4 bytes from the buffer and returns it as a float. Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64. Returns the float read as first return value, and current bit position as second return value.
 
-### ReadInt( [bitLength:integer] )
+### ReadInt( bitLength: integer = 32 )
 
 Reads 4 bytes from the buffer and returns it as an integer. Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64. Returns the integer read as first return value, and current bit position as second return value.
 
-### ReadString( maxlen:integer )
+### ReadString( maxlen: integer )
 
 Reads a string from the buffer. You must specify valid maxlen. The string will be truncated if it is longer than maxlen. Returns the string read as first return value, and current bit position as second return value.
 
@@ -50,27 +50,27 @@ Returns the current bit position in the buffer.
 
 When writing, make sure that your curBit is correct and that you do not overflow the buffer.
 
-### SetCurBit( bit:integer )
+### SetCurBit( bit: integer )
 
 Sets the current bit position in the buffer.
 
-### WriteBit( bit:integer )
+### WriteBit( bit: integer )
 
 Writes a single bit to the buffer.
 
-### WriteByte( byte:integer )
+### WriteByte( byte: integer )
 
 Writes a single byte to the buffer.
 
-### WriteString( str:string )
+### WriteString( str: string )
 
 Writes given string to the buffer.
 
-### WriteInt( int:integer, [bitLength:integer] )
+### WriteInt( int: integer, bitLength: integer = 32 )
 
 Writes an integer to the buffer. Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64.
 
-### WriteFloat( value:number, [bitLength:integer] )
+### WriteFloat( value:number, bitLength: integer = 32 )
 
 Writes a float to the buffer. Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64.
 
