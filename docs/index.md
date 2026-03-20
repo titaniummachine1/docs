@@ -20,6 +20,14 @@ We recommend using [Visual Studio Code](https://code.visualstudio.com) with thos
 
 If you are using Open AI you can access API via [http://lmaobox.net/lua/sitemap.xml](http://lmaobox.net/lua/sitemap.xml)
 
+### AI-Assisted Development (Local MCP)
+If you are using an AI agent like Cursor, Claude Desktop, or Windsurf, you can provide it with the full Lmaobox API by installing a local Context Server. This ensures the AI knows all current functions and constants without hallucinations.
+
+**How to Install Locally:**
+1. Clone or download the repository: https://github.com/titaniummachine1/Lmaobox_Context_Server
+2. In your AI agent's MCP settings, add the local path to the server.
+3. Alternatively, tell your AI: "I have cloned the Lmaobox MCP server to my machine. Please help me install it locally so you can access the API documentation." or jsut ask it to isntall and hope it works if not then you must simply download the repo yourself and then ask ai to wire it up
+
 ## Learning Lua
 
 You can start learning Lua by following the friendly tutorial made by Garry's Mod developers: 
