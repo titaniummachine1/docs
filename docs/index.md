@@ -26,7 +26,7 @@ If you are using an AI agent like Cursor, Claude Desktop, or Windsurf, you can p
 **How to Install Locally:**
 1. Clone or download the repository: https://github.com/titaniummachine1/Lmaobox_Context_Server
 2. In your AI agent's MCP settings, add the local path to the server.
-3. Alternatively, tell your AI: "I have cloned the Lmaobox MCP server to my machine. Please help me install it locally so you can access the API documentation." or jsut ask it to isntall and hope it works if not then you must simply download the repo yourself and then ask ai to wire it up
+3. Alternatively, tell your AI: "I have cloned the Lmaobox MCP server to my machine. Please help me install it locally so you can access the API documentation." or just ask it to isntall and hope it works if not then you must simply download the repo yourself and then ask ai to wire it up.
 
 ## Learning Lua
 
