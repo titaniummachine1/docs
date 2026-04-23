@@ -1,22 +1,36 @@
-# AI-Assisted Development 
+## AI-Assisted Development
 
-## AI Chats And Agents
+### API Reference (Web)
+You can instruct your AI assistant to use the official Lmaobox Lua API docs:
+- http://lmaobox.net/lua/sitemap.xml
 
-You can insruct your AI assistant to read about our API via link [http://lmaobox.net/lua/sitemap.xml](http://lmaobox.net/lua/sitemap.xml)
+### AI-Assisted Development (Recommended: Marketplace Extension)
 
-## AI-Assisted Development (Local MCP)
+For AI agents (VS Code, Cursor, Windsurf, Claude Desktop, etc.), use the community MCP extension:
 
-If you are using an AI agent like Cursor, Claude Desktop, or Windsurf, you can provide it with the full Lmaobox API by installing a **community-maintained, third-party local MCP/context server**.
+- Marketplace: https://marketplace.visualstudio.com/items?itemName=titaniummachine1.lmaobox-context
 
-This helps ensure the AI knows all current functions and constants with reduced hallucinations. This server is **not an official Lmaobox product or an officially supported component**.
+This is the easiest path and is intended to be mostly zero-config.
 
-**How to Install Locally (Community / Third-Party MCP Server):**
+#### Install Steps
+1. Install **Lmaobox Context** from the VS Code Marketplace link above.
+2. Reload your editor window.
+3. Wait a few seconds for automatic setup.
+4. If setup did not finish automatically, run:
+   - `Lmaobox Context: Install Or Update Runtime`
+5. If you use external MCP clients (Cursor/Windsurf/Claude/Desktop configs), run:
+   - `Lmaobox Context: Sync External MCP Configs`
 
-1. Clone or download the community MCP/context server repository (hosted under a personal GitHub account): [https://github.com/titaniummachine1/Lmaobox_Context_Server](https://github.com/titaniummachine1/Lmaobox_Context_Server)
+#### AI Prompt You Can Use
+If needed, tell your AI assistant:
 
-2. In your AI agent's MCP settings, add the local path to the cloned server repository.
+"I installed the Lmaobox Context extension from the Marketplace. Run setup by executing `Lmaobox Context: Install Or Update Runtime`, then `Lmaobox Context: Sync External MCP Configs`, and confirm Lmaobox tools are available."
 
-3. Alternatively, tell your AI: "I have cloned a community Lmaobox MCP server to my machine. Please help me install it locally so you can access the API documentation." 
-    If automatic installation does not work, manually download/clone the repo yourself and then ask the AI to wire it up.
+### Manual/Legacy Option (Only If Needed)
+If Marketplace install is unavailable, use the community repository:
+- https://github.com/titaniummachine1/Lmaobox_Context_Server
 
-**Safety and support note:** This is a community/third-party project. Review the code and understand what it does before running it locally, and only run it in environments you trust. Maintenance, updates, and support for this server are provided by the community/author, not guaranteed by Lmaobox.
+### Safety and Support Note
+This MCP/extension is a **community-maintained third-party project**.  
+It is **not an official Lmaobox product** and is not officially supported by Lmaobox.  
+Review code before running locally and only use it in environments you trust.
